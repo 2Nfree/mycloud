@@ -16,14 +16,14 @@ import javax.annotation.Resource;
 public class OrderController {
 
     //public static final String PAYMENT_URL="http://localhost:8001";
-    public static final String PAYMENT_URL="http://cloud-provider-payment";
+    public static final String PAYMENT_URL="http://consul-provider-payment";
 
     @Resource
     public RestTemplate restTemplate;
 
-    @GetMapping("/consumer/payment/payment/zk")
+    @GetMapping("/consumer/payment/consul")
     public String paymentInfo(){
-        return restTemplate.getForObject(PAYMENT_URL+"/payment/zk",String.class);
+        return restTemplate.getForObject(PAYMENT_URL+"/payment/consul",String.class);
     }
 
     @GetMapping("/consumer/payment/create")
