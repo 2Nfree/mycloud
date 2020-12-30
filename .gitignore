@@ -8,3 +8,5 @@
 /cloud-provider-payment8004/target/
 # Project exclude paths
 /cloud-consumer-zookeeper-order80/target/
+/cloud-consumer-consul-order80/target
+/cloud-provider-payment8006/target
